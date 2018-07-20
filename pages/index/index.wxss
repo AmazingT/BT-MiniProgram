@@ -1,0 +1,46 @@
+.container{
+  height: 100%;
+}
+.swiper-section{
+  width:100%;
+  height: 340rpx;
+}
+.banner-img{
+  width:100%;
+  height:100%;
+}
+.icon-wrapper{
+  width: 100%;
+  padding: 20rpx 0;
+}
+.icon-wrapper .icon{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.icon-wrapper .icon-item{
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+.icon-wrapper .icon-item text{
+  color:#000;
+  font-size:24rpx;
+  line-height:2;
+
+}
+.icon-wrapper .icon-item image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 0 auto;
+}
+.show-item image{
+  width:100%;
+}
+.icon-btn button{
+  background-color: #fff;
+}
+.icon-btn button::after{
+  border: none !important;
+}

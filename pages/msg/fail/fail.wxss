@@ -1,0 +1,5 @@
+button[type=primary]{
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+}

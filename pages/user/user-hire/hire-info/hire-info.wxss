@@ -1,0 +1,25 @@
+@import "../../../hire/hire.wxss";
+.weui-cell .weui-cell__ft{
+  color: #333;
+}
+.btn{
+  padding: 0 15px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.btn button{
+  width: 300rpx;
+  height: 45px;
+  margin: 0px;
+  line-height: 45px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: #1abc9c;
+}
+.btn button.btn-hover{
+  color: rgba(255,255,255,0.6);
+  background-color: #09a083;
+}

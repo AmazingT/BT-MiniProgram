@@ -1,0 +1,32 @@
+<!--pages/user/user-account/user-account.wxml-->
+<view class='container'>
+  <view class='content'>
+    <!-- 权限 -->
+    <view class='purview'>
+      <view class='purview-use'>可用权限</view>
+      <view class='purview-count'>5</view>
+      <button class='recharge'>立即充值</button>
+    </view>
+
+    <!-- 积分充值记录 -->
+    <view class='record'>
+      <!-- title -->
+      <view class='record-title'>
+        <view>充值说明</view>
+        <view>充值消费记录</view>
+      </view>
+
+      <!-- record list -->
+      <view class='record-list-wrapper'>
+        <view class='record-list' wx:for="{{record}}" wx:key="*this">
+          <view class='record-left'>
+            <view>{{item.recordType}}</view>
+            <view class='record'>{{item.recordCount}}积分</view>
+          </view>
+          <!-- record time -->
+          <view class='record-time'>{{item.recordTime}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

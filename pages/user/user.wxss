@@ -1,0 +1,59 @@
+/* pages/user/user.wxss */
+.weui-cell{
+  font-size: 14px;
+}
+.weui-cell__ft{
+  color: #F95E5A;
+}
+.user-wrapper{
+  padding: 20px 15px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.user-info{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.user-info .user-avatar{
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-info .user-name{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.user-cert{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+}
+.user-cert .cert{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.user-cert .cert image.cert-pic{
+  width: 64rpx;
+  height: 64rpx;
+}
+.user-cert .person-cert{
+  margin-right: 40rpx;
+}
+.user-cert .cert .icon-ok{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: -52rpx;
+  left: -52rpx;
+}

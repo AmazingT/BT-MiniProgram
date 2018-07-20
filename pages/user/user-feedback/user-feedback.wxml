@@ -1,0 +1,36 @@
+<!--pages/user/user-feedback/user-feedback.wxml-->
+<wxs module="filter" src="../../../utils/filter.wxs"></wxs>
+<view class='container'>
+  <view class='content'>
+    <!-- feedback submit -->
+    <form class='form'>
+      <view class='view-wrapper'>
+          <view class='view'>
+            <textarea class='view-area' placeholder='此处填写您的意见' maxlength='150'></textarea>
+          </view>
+          <button class='submit'>提交</button>
+      </view>
+    </form>
+
+    <!-- rules -->
+    <view class='rules'>
+      <view class='title'>活动规则文档</view>
+      <view class='rules-wrapper'>
+        <view class='rules-list' wx:for="{{rules}}" wx:key="{{item.id}}">
+          <view class='item'>{{item.id}}. {{item.desc}}</view>
+        </view>
+      </view>
+    </view>
+
+    <!-- list of winners -->
+    <view class='winner-wrapper'>
+      <view class='title'>中奖名单</view>
+      <view class='winner-list'>
+        <view class='item' wx:for="{{winners}}" wx:key="{{item.id}}">
+          <view class='item-phone'>{{filter.fmtPhone(item.phone)}}</view>
+          <view class='item-time'>{{item.time}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

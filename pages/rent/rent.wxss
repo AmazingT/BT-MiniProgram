@@ -1,0 +1,90 @@
+/* pages/rent/rent.wxss */
+page,
+.container{
+  width: 100%;
+  height: 100%;
+}
+.container,
+scroll-view{
+  background-color: #f7f7f7;
+}
+.section-picker{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #fff;
+}
+.section-picker .picker-wrapper{
+  width: 33.33%;
+  padding: 10px 0;
+  font-size: 30rpx;
+  color: #888;
+  text-align: center;
+  font-family: "MicrosoftYaHei";
+  border-bottom: 1px solid #f3f3f3;
+}
+.section-picker .picker-wrapper .picker{
+  color: #353535;
+  font-weight: bold;
+}
+.section-picker .picker-wrapper image{
+  width: 10px;
+  height: 5px;
+  margin-left: 20rpx;
+  vertical-align: middle;
+}
+
+.section-select{
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 4px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  font-family: "MicrosoftYaHei";
+  border-bottom: 1px solid #f3f3f3;
+  background-color: #fff;
+}
+.section-select .select-item.active{
+  color: #fff;
+  background-color: #3871a8;
+}
+.section-select .select-item{
+  width: 70px;
+  height: 25px;
+  margin-top: 10px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #353535;
+  border-radius: 15px;
+  background-color: #dfdfdf;
+}
+.section-product .reco-title{
+  padding: 20px 0;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.section-product .reco-title .title{
+  margin: 0 10px;
+  color: #888;
+  font-size: 16px;
+}
+.section-product .reco-title .line{
+  width: 80px;
+  height: 1px;
+  background-color: #888;
+}
+.section-product .reco-title .title image{
+  width: 15px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}

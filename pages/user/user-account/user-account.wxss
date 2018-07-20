@@ -1,0 +1,64 @@
+/* pages/user/user-account/user-account.wxss */
+.content{
+  font-size: 14px;
+}
+.content .purview{
+  padding-top: 34px;
+  padding-bottom: 25px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content .purview .purview-use{
+  color: #666;
+}
+.content .purview .purview-count{
+  padding: 10px 0;
+  font-size: 20px;
+  color: #F95E5A;
+  font-weight: bold;
+}
+.content .purview .recharge{
+  width: 540rpx;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: rgba(26, 188, 156, 1);
+}
+
+.record .record-title{
+  padding: 15px 25px 15px 15px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.record-list{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 15px;
+  margin-bottom: 10px;
+  color: #666;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+}
+.record-list:first-child{
+  border-top: 0;
+}
+.record-list .record-time,
+.record-list .record-left .record{
+  color: #999;
+}

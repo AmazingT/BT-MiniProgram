@@ -1,0 +1,18 @@
+<!--components/product/product.wxml-->
+<view class='product-wrapper clearfix'>
+  <view class='product-item' bindtap='selectProductTap' data-goodsid='{{pro.id}}' wx:for="{{product}}" wx:for-item="pro" wx:key="{{pro.id}}">
+    <image class='product-pic' src='{{pro.imgUrl}}'></image>
+    <view class='product-desc'>
+      <view class='pro pro-title'>
+        <text class='product-name'>{{pro.proName}}</text>
+        <text class='deposit'>押金{{pro.deposit}}元</text>
+      </view>
+      <view class='pro product-rent'><text class='product-money'><text class='mark'>¥</text>{{pro.dayRentMin}}-{{pro.dayRentMax}}</text>(日租金)</view>
+      <view>
+        <text class='pro-box'>{{pro.proAddress}}</text>
+        <text class='pro-box'>{{pro.proEnName}}</text>
+        <text class='pro-box'>{{pro.proCount}}台</text>
+      </view>
+    </view>
+  </view>
+</view>

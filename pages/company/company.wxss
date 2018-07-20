@@ -1,0 +1,56 @@
+/* pages/company/company.wxss */
+.weui-cell{
+  height: 90rpx;
+  padding: 0 15px;
+  line-height: 90rpx;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.weui-cell .unit-input{
+  margin-right: 80rpx;
+}
+.picker-wrapper .picker,
+.weui-cell .weui-input{
+  color: #353535;
+}
+.weui-cell .weui-input{
+  width: 480rpx;
+}
+.weui-label{
+  width: auto;
+}
+.weui-cells{
+  margin-bottom: 200rpx;
+}
+.submit-btn{
+  padding: 0 15px;
+  margin-bottom: 40rpx;
+}
+.submit-btn .btn{
+  height: 45px;
+  line-height: 45px;
+  width: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+.submit-btn .submit{
+  margin-bottom: 40rpx;
+  background-color: #169bd5;
+}
+.submit-btn .invite{
+  background-color: #ff3300;
+}
+.company-tip{
+  padding: 0 15px;
+  color: #333;
+  font-size: 24rpx;
+}
+.submit-btn button.btn-hover-confirm{
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #058eca;
+}
+
+.submit-btn button.btn-hover-invite{
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #ea2f00;
+}

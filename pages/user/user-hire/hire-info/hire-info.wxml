@@ -1,0 +1,88 @@
+<view class='container'>
+  <form bindsubmit='formSubmit'>
+      <!-- product selected -->
+      <view class='product-info'>
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell">
+            <view class="weui-cell__bd">产品类型</view>
+            <view class="weui-cell__ft">中海达IRT</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">生产厂家</view>
+            <view class="weui-cell__ft">上海皮鞋厂</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">产品型号</view>
+            <view class="weui-cell__ft">IRT</view>
+          </view>
+        <!-- image -->
+        <!-- <view class='pic-wrapper'>
+          <upload></upload>
+        </view> -->
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">数量</view>
+            <view class="weui-cell__ft">3</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">日租金</view>
+            <view class="weui-cell__ft">1000</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">押金</view>
+            <view class="weui-cell__ft">10000</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">产品参数</view>
+            <view class="weui-cell__ft">IRT</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">配置详情</view>
+            <view class="weui-cell__ft">配置详情</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">备注信息</view>
+            <view class="weui-cell__ft">备注信息</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">所在城市</view>
+            <view class="weui-cell__ft">上海</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">手机号码</view>
+            <view class="weui-cell__ft">18585257502</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">租赁截止日期</view>
+            <view class="weui-cell__ft">2019-05-20</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">取货方式</view>
+            <view class="weui-cell__ft">上门自提</view>
+          </view>
+
+          <view class="weui-cell">
+            <view class="weui-cell__bd">取货地址</view>
+            <view class="weui-cell__ft">上海市</view>
+          </view>
+        </view>
+      </view>
+      
+      <!-- submit -->
+      <view class='btn'>
+        <button class='btn-up' hover-class='btn-hover'>上架/下架</button>
+        <button class='btn-del' hover-class='btn-hover'>删除</button>
+      </view>
+  </form>
+</view> 

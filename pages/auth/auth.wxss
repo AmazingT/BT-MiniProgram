@@ -1,0 +1,88 @@
+/* pages/auth/auth.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  background-color: #f2f2f2;
+}
+scroll-view{
+  background-color: #f2f2f2;
+}
+.auth-wrapper{
+  padding: 0 15px;
+}
+.auth-wrapper .input-user {
+  height: 40px;
+  line-height: 40px;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.auth-wrapper .input-user .user-name{
+  width: 400rpx;
+}
+.auth-wrapper .input-user .icon-user{
+  width: 24px;
+  height: 24px;
+  margin: 0 10px
+}
+.id-card{
+  margin-bottom: 25px;
+}
+.id-card .card-box-front{
+  margin-bottom: 10px;
+}
+.id-card .card-box .card-tip{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.id-card .card-box .card{
+  width: 100%;
+  height: 320rpx;
+  background-color: #fff;
+  border-radius: 8px;
+  position: relative;
+}
+.id-card .card-box .card .card-pic,
+.id-card .card-box .card .card-pic-wrapper{
+  width: 100%;
+  height: 100%;
+}
+.id-card .card-box .card .card-pic{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-radius: 8px;
+}
+.id-card .card-box .card .icon-add{
+  width:64rpx;
+  height: 64rpx;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  margin-top: -32rpx;
+  margin-left: -32rpx;
+}
+.btn-submit .confirm{
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: #1abc9c;
+}
+.btn-submit button.btn-hover{
+  color: rgba(255,255,255,0.6);
+  background-color: #0fb191;
+}

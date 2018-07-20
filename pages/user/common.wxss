@@ -1,0 +1,88 @@
+/* pages/user/user-rent/user-rent.wxss */
+.content {
+  padding: 0 15px;
+}
+.product-wrapper .product-list {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 5px;
+  justify-content: space-between;
+  border: 1px solid #f2f2f2;
+  font-size: 12px;
+}
+.product-wrapper .product-list:first-child{
+  margin-top: 5px;
+}
+.product-wrapper .product-list .product-right{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  align-items: center;
+}
+.product-list .product-right .product-pic{
+  width: 50px;
+  height: 50px;
+}
+.product-list .product-desc{
+  height: 50px;
+  margin-left: 10px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.product-desc .product-name .factory{
+  margin-left: 8px;
+}
+.product-desc .product-type text{
+  padding: 2px 4px;
+  margin-left: 4px;
+  color: #999;
+  border: 1px solid #f2f2f2;
+}
+.product-desc .product-type text:first-child{
+  margin-left: 0px;
+}
+.product-list .status{
+  width: 35px;
+  height: 35px;
+  color: #c3c3c3;
+  float: right;
+  padding: 2px;
+  margin-right: 5px;
+  line-height: 35px;
+  border-radius: 50%;
+  text-align: center;
+  border: 1px solid #c3c3c3;
+}
+.product-list .status.status-up{
+  margin-right: 0px;
+  color: #333;
+  background-color: #ffcc99;
+}
+
+.product-list .status.status-rent{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.no-result{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 120rpx;
+}
+.no-result image{
+  width: 90px;
+  height: 90px;
+  margin-bottom: 25px;
+}
+.no-result .desc{
+  font-size: 14px;
+  color: #888;
+}

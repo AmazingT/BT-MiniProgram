@@ -1,0 +1,16 @@
+<view class="page">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="warn" size="93"></icon>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">操作失败</view>
+            <view class="weui-msg__desc">操作失败说明操作失败说明操作失败说明操作失败说明操作失败说明操作失败说明</view>
+        </view>
+        <view class="weui-msg__opr-area">
+            <view class="weui-btn-area">
+                <button class="weui-btn" type="primary" bindtap='goBack'>返回</button>
+            </view>
+        </view>
+    </view>
+</view>

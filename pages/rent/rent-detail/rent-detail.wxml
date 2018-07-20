@@ -1,0 +1,57 @@
+<!--pages/rent/rent-detail/rent-detail.wxml-->
+<view class='container'>
+  <scroll-view scroll-y>
+    <swiper class='swiper-section' indicator-dots indicator-color='#bbb' indicator-active-color='#fff' circular>
+      <block>
+        <swiper-item>
+          <image src='{{goods.imgUrl}}'></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <!-- goods info -->
+    <view class='goods-info'>
+      <view class='goods-name'>{{goods.proName}}</view>
+      <view class='goods-rent_count'>
+        <text class='goods-rent'><text class='goods-day_rent'><text class='mark'>￥</text>{{goods.dayRentMax}}</text>(日租金)</text>
+        <text class='goods-count'>数量：{{goods.proCount}}台</text>
+      </view>
+      <view class='goods-deposit_addr'>
+        <text class='goods-deposit'>押金{{goods.deposit}}元</text>
+        <text class='goods-addr'>{{goods.proAddress}}</text>
+      </view>
+    </view>
+    <!-- other goods info tab -->
+    <view class="page">
+        <view class="page__bd">
+            <view class="weui-tab">
+                <view class="weui-navbar">
+                    <block wx:for="{{tabs}}" wx:key="*this">
+                        <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                            <view class="weui-navbar__title">{{item}}</view>
+                        </view>
+                    </block>
+                    <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+                </view>
+                <view class="weui-tab__panel">
+                    <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+                      <view class='item'><text>产品类型：</text>RTK</view>
+                      <view class='item'><text>生产厂家：</text>中海达</view>
+                      <view class='item'><text>产品型号：</text>V756</view>
+                      <view class='item'><text>租赁时间：</text>2018年-2030年</view>
+                      <view class='item'><text>所在城市：</text>山西省太原市</view>
+                      <view class='item'><text>取货方式：</text>同城面交</view>
+                      <view class='item'><text>取货地址：</text>山西省太原市小店区长治路</view>
+                    </view>
+                    <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
+                    <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+                    <view class="weui-tab__content" hidden="{{activeIndex != 3}}">选项四的内容</view>
+                </view>
+                <!-- contact button -->
+                <view class='contact-btn'>
+                  <button class='contact' bindtap="viewContactInfo" hover-class='btn-hover'>查看联系方式（需要消耗3积分）</button>
+                </view>
+            </view>
+        </view>
+    </view>
+  </scroll-view>
+</view>

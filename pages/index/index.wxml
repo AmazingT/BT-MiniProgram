@@ -1,0 +1,59 @@
+<view class="container">
+  <scroll-view scroll-y>
+    <swiper class='swiper-section' indicator-dots indicator-color='#bbb' indicator-active-color='#fff' autoplay circular>
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src='{{item}}' class='banner-img'/>
+        </swiper-item>
+      </block>
+    </swiper>
+
+    <view class='icon-wrapper clearfix'>
+      <navigator class='icon' url="/pages/rent/rent" open-type="switchTab" hover-class='none'>
+        <view class='icon-item'>
+          <image src='/images/index/icon_1.png' mode="aspectFit"></image>
+          <text>我要租赁</text>
+        </view>
+      </navigator>
+
+      <navigator class='icon' url="/pages/hire/hire" open-type="switchTab" hover-class='none'>
+        <view class='icon-item'>
+          <image src='/images/index/icon_2.png' mode="aspectFit"></image>
+          <text>我要出租</text>
+        </view>
+      </navigator>
+
+      <navigator class='icon' url="/pages/rent/rent" open-type="switchTab" hover-class='none'>
+        <view class='icon-item'>
+          <image src='/images/index/icon_3.png' mode="aspectFit"></image>
+          <text>添加桌面</text>
+        </view>
+      </navigator>
+
+      <view class='icon icon-btn'>
+        <button open-type="share">
+          <view class='icon-item'>
+            <image src='/images/index/icon_4.png' mode="aspectFit"></image>
+            <text>转发分享</text>
+          </view>
+        </button>
+      </view>
+    </view>
+
+    <view class='show-item'>
+      <image src='/images/index/banner_1.png'></image>
+    </view>
+
+    <view class='show-item'>
+      <image src='/images/index/banner_2.png'></image>
+    </view>
+
+    <view class='show-item'>
+      <image src='/images/index/banner_3.png'></image>
+    </view>
+
+    <view class='show-item'>
+      <image src='/images/index/banner_4.png'></image>
+    </view>
+  </scroll-view>
+</view>

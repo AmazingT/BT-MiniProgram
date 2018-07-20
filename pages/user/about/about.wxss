@@ -1,0 +1,23 @@
+/* pages/user/about/about.wxss */
+.content{
+  font-size: 14px;
+}
+.content .bt-pic image{
+  width: 100%;
+  height: 340rpx;
+  margin-bottom: 25px;
+}
+
+.content .bt-wrapper{
+  padding: 0 15px;
+}
+.content .bt-wrapper .bt-ques{
+  color: #333;
+  padding: 8px 0;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.content .bt-wrapper .bt-desc{
+  color: #999;
+  line-height: 34px;
+}

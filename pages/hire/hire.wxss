@@ -1,0 +1,90 @@
+.container{
+  padding-bottom: 20px;
+  background-color: #f7f7f7;
+}
+.pic-wrapper{
+  margin: 8px 0;
+  display:c flex;
+  display: -webkit-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  background-color: #fff;
+}
+.pic-wrapper .pic{
+  width: 200rpx;
+  height: 200rpx;
+  margin-left: 20rpx;
+}
+.pic-wrapper .pic image{
+  width: 100%;
+  height: 100%;
+}
+.product-info{
+  margin-bottom: 20px;
+  font-family: "Microsoft YaHei";
+}
+.picker-wrapper .tip,
+.product-info .placeholder,
+.weui-cell .weui-cell__ft{
+  color: #bfbfbf;
+}
+.picker-wrapper .picker,
+.weui-cell .weui-input{
+  color: #353535;
+}
+.weui-cell .weui-input{
+  margin-right: 15px;
+}
+.product-info .picker-wrapper image{
+  width: 7px;
+  height: 6px;
+  float: right;
+  margin-top: 15rpx; 
+}
+.product-info .upload-pic{
+  margin-right: 8px;
+}
+.product-info .add{
+  width: 23px;
+  height: 23px;
+}
+.weui-cell{
+  height: 90rpx;
+  padding: 0 15px;
+  line-height: 90rpx;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.weui-cell .unit-input{
+  margin-right: 80rpx;
+}
+.weui-label {
+  width: 90px;
+}
+.weui-cells__title{
+  color:#333;
+}
+#remark-wrapper {
+  height:6.5em;
+  padding:8px 15px;
+}
+#remark-wrapper .weui-textarea{
+  height:6.5em;
+  line-height:1.5;
+}
+.btn{
+  padding: 0 15px;
+}
+button.sumit-check{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #8644ca;
+}
+button.btn-hover{
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #671ab7;
+}

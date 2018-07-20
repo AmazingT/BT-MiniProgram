@@ -1,0 +1,60 @@
+<view class='container'>
+  <scroll-view>
+    <!-- header picker -->
+    <view class='section-picker'>
+      <view class='picker-wrapper'>
+        <picker bindchange='pickerChange' data-id="1" value='{{cityIndex}}' range='{{city}}'>
+          <text class='{{isCityPicker?"":"hide"}}'>省份</text>
+          <text class='picker {{isCityPicker?"hide":""}}'>{{city[cityIndex]}}</text>
+          <image src='/images/rent/arrow-down.png'></image>
+        </picker>
+      </view>
+
+      <view class='picker-wrapper'>
+        <picker bindchange='pickerChange' data-id="2" value='{{factoryIndex}}' range='{{factory}}'>
+          <text class='{{isFactoryPicker?"":"hide"}}'>厂家</text>
+          <text class='picker {{isFactoryPicker?"hide":""}}'>{{factory[factoryIndex]}}</text>
+          <image src='/images/rent/arrow-down.png'></image>
+        </picker>
+      </view>
+
+      <view class='picker-wrapper'>
+        <picker bindchange='pickerChange' data-id="3" value='{{modelIndex}}' range='{{model}}'>
+          <text class='{{isModelPicker?"":"hide"}}'>型号</text>
+          <text class='picker {{isModelPicker?"hide":""}}'>{{model[modelIndex]}}</text>
+          <image src='/images/rent/arrow-down.png'></image>
+        </picker>
+      </view>
+    </view>
+
+    <!-- select item -->
+    <view class='section-select' bindtap='selectItemTap'>
+      <view class='select-item {{tapActive==0?"active":""}}' data-name="rtk">RTK</view>
+      <view class='select-item {{tapActive==1?"active":""}}' data-name="qzy">全站仪</view>
+      <view class='select-item {{tapActive==2?"active":""}}' data-name="szy">水准仪</view>
+    </view>
+
+    <!-- product list -->
+    <view class='section-product'>
+      <!-- product -->
+      <product product="{{productInfo}}"></product>
+
+      <!-- <view class='reco-wrapper' hidden='{{productInfo.length===0}}'>
+        <view class='reco-title'>
+          <view class='line left-line'></view>
+          <view class='title'>
+            <image src='/images/rent/product_reco.png'></image>
+            <text>仪器推荐</text>
+          </view>
+          <view class='line right-line'></view>
+        </view>
+      </view> -->
+      
+      <!-- product recommend -->
+      <!-- <product product="{{product}}"></product>  -->
+
+      <!-- no search result -->
+      <noresult len="{{productInfo.length}}"></noresult>
+    </view>
+  </scroll-view>
+</view>

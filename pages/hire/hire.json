@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我要出租",
+  "usingComponents": {
+    "upload": "/components/upload/upload"
+  }
+}

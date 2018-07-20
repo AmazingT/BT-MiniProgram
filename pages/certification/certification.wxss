@@ -1,0 +1,4 @@
+/* pages/certification/certification.wxss */
+.weui-cells{
+  font-size: 14px;
+}

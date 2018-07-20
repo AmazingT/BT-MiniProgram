@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/rent/rent",
+    "pages/hire/hire",
+    "pages/user/user",
+    "pages/hire/notice/notice",
+    "components/upload/upload",
+    "components/product/product",
+    "components/noresult/noresult",
+    "pages/rent/rent-detail/rent-detail",
+    "pages/certification/certification",
+    "pages/certification/phone-num/phone-num",
+    "pages/rent/points/points",
+    "pages/rent/fail/fail",
+    "pages/user/user-rent/user-rent",
+    "pages/user/user-account/user-account",
+    "pages/user/about/about",
+    "pages/auth/auth",
+    "pages/user/user-hire/user-hire",
+    "pages/company/company",
+    "pages/user/user-feedback/user-feedback",
+    "pages/msg/success/success",
+    "pages/msg/fail/fail",
+    "pages/user/user-rent/rent-info/rent-info",
+    "pages/user/user-hire/hire-info/hire-info"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#15619D",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a0a0a0",
+    "selectedColor": "#3871a8",
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tabBar/index.png",
+        "selectedIconPath": "images/tabBar/index_selected.png"
+      },
+      {
+        "pagePath": "pages/rent/rent",
+        "text": "我要租赁",
+        "iconPath": "images/tabBar/rent.png",
+        "selectedIconPath": "images/tabBar/rent_selected.png"
+      },
+      {
+        "pagePath": "pages/hire/hire",
+        "text": "我要出租",
+        "iconPath": "images/tabBar/hire.png",
+        "selectedIconPath": "images/tabBar/hire_selected.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tabBar/user.png",
+        "selectedIconPath": "images/tabBar/user_selected.png"
+      }
+    ]
+  }
+}
